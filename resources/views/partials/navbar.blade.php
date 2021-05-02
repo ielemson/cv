@@ -18,11 +18,11 @@
           <li class="nav-item">
             @if (Route::has('login'))
                 @auth
-                {{-- <a class="nav-link js-scroll" href="{{route('login')}}">Login</a>
-                   --}}
+                {{-- <a class="nav-link js-scroll" href="{{route('login')}}">Login</a> --}}
+                  
 
-                    <li class="nav-link js-scroll"><a href="{{ route('logout') }}" onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">Logout</a></li>
+                  <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();" class="nav-link js-scroll">Logout</a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                         style="display: none;">
                         @csrf
